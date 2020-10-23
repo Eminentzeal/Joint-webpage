@@ -1,0 +1,224 @@
+/*
+  Hello!
+  These are some base styles so that our tutorial looks good.
+  Let's go through the important bits real quick
+*/
+:root {
+  --yellow: #ffc600; /*This is just some simple css variables*/
+  --black: #272727;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url('./images/topography.svg'),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  /* background: white; */
+  background-attachment: fixed;
+  letter-spacing: -1px;
+  font-size: 15px;
+}
+
+button {
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* PLEASE DO NOT TOUCH THE ABOVE STYLES
+ WRITE YOUR OWN STYLES BELOW. GOOD LUCK */
+ 
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Top Container */
+.top {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'
+}
+.hero {
+  grid-area: showcase;
+  min-height: 40rem;
+  background: url(images/taco.jpg );
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  background: var(--yellow);
+  padding: 0.1em 0.1em;
+}
+.hero p {
+  background: var(--yellow);
+  padding: 0.1em 0.1em;
+  font-weight: 700;
+}
+
+/* Top Box (cta's)*/
+.cta {
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+.cta .price {
+  font-size: 5.5rem;
+  margin: 0;
+}
+.cta p {
+  margin: 0;
+}
+.cta1 {
+  grid-area: top-box-a;
+}
+.cta2 {
+  grid-area: top-box-b;
+}
+
+
+
+/* Navigation */
+.menu ul {
+  display: grid;
+  grid-gap: 1.25em;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu a {
+  background: var(--yellow);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.menu a:hover {
+  background: var(--black);
+  color: var(--yellow);
+}
+
+/* Boxes */
+.features {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.feature {
+  background: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-weight: 500;
+}
+.feature p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  color: grey;
+}
+
+/* Info */
+.about {
+  background: #fff;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+.about p {
+  font-weight: 600;
+}
+
+/* Portfoli0 */
+.gallery-heading {
+  text-align: center;
+  margin:0;
+  grid-auto-rows: minmax(20px, auto);
+}
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+.gallery img {
+  width: 100%;
+}
+
+/* Media Queries */
+
+  @media(max-width: 700px) {
+    .top {
+      grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .menu ul {
+      grid-template-columns: 1fr;
+    }
+    .about {
+      grid-template-columns: 1fr;
+    }
+    .about button {
+      display: block;
+      text-align: center;
+      margin: auto;
+      width: 100%;
+    }
+
+  }
+
+  @media(max-width: 500px) {
+    .top {
+      grid-template-areas:
+        'showcase'
+        'top-box-a' 'top-box-b';
+    }
+  }
