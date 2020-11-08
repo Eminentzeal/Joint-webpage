@@ -173,6 +173,23 @@ img {
   font-weight: 600;
 }
 
+.contain {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.span-one {
+  border-top: 1.5rem solid;
+  border-image: linear-gradient(to right, transparent, var(--yellow)) 1;
+  grid-column: 1/3;
+}
+
+.span-two {
+  border-top: 1.5rem solid;
+  border-image: linear-gradient(to right, var(--yellow), transparent) 1;
+  grid-column: 4/6;
+}
+
 /* Portfoli0 */
 .gallery-heading {
   text-align: center;
