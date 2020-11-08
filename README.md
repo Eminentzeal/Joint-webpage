@@ -31,7 +31,7 @@ This project is about creating a eatery webpage
     * https://www.linkedin.com/company/michub/
 
 # Live Demo
-[See project live here] (https://raw.githack.com/Eminentzeal/Mini-Classwork_Ezekiel/main/Responisve Website/index.html)
+[See project live here] (https://raw.githack.com/Eminentzeal/Mini-Classwork_Ezekiel/main/index.html)
 
 # 🤝 Contributions
 * This project is open to your comments and contributions, kindly reach the author through the above author's social media handles.
