@@ -31,7 +31,10 @@ This project is about creating a eatery webpage
   * https://www.linkedin.com/company/michub/
 
 ## Live Demo
-[See project live here](https://raw.githack.com/Eminentzeal/Mini-Classwork_Ezekiel/main/index.html)
+[See project live here](https://eminentezekiel-taco-joint.netlify.app/)
 
 ## 🤝 Contributions
 * This project is open to your comments and contributions, kindly reach the author through the above author's social media handles.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50f2444f-15f3-43fb-ac5f-60c024b957e1/deploy-status)](https://app.netlify.com/sites/eminentezekiel-taco-joint/deploys)
