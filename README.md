@@ -1,7 +1,7 @@
 # Taco-Joint
 
 ## About The Project
-This project is about creating a eatery webpage
+This project is about creating webpage where order can be placed for food and breverages
 
 ## Image
 ![landing page.](/assets/images/landing.jpg "This is the welcome interface")
