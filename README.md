@@ -22,13 +22,13 @@ This project is about creating a eatery webpage
 * [Chioma Nwachukwu](https://github.com/Chiomy).
 
 ## Acknowledgements
-* HomeFrontStartup
-  * http://homefrontstartup.com.ng/
+* [HomeFrontStartup](http://homefrontstartup.com.ng/)
 * Mentors International
   * https://mentorsint.com/
   * https://www.facebook.com/mentorshubyola/
   * https://twitter.com/hub_mic
   * https://www.linkedin.com/company/michub/
+* [Wesbos](https://github.com/wesbos)
 
 ## Live Demo
 [See project live here](https://eminentezekiel-taco-joint.netlify.app/)
